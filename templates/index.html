@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review Sentiment Predictor</title>
+</head>
+<body>
+    <h1>Movie Review Sentiment Predictor</h1>
+    <form method="post">
+        <textarea name="review" rows="4" cols="50" placeholder="Enter your movie review here"></textarea><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if result %}
+    <h2>Result:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
